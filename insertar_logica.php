@@ -2,8 +2,7 @@
 include "./conexion.php";
 $sql="INSERT INTO usuarios VALUES
 ('$_POST[cedula]','$_POST[nombre]','$_POST[apellido]',
-'$_POST[direccion]','$_POST[email]','$_POST[telefono]','$_POST[sex
-o]','$_POST[nacionalidad]','$_POST[ciudad]')";
+'$_POST[direccion]','$_POST[email]','$_POST[telefono]','$_POST[sexo]','$_POST[nacionalidad]','$_POST[ciudad]')";
 $result = mysqli_query($link, $sql); //ejecuto la consulta
 if (!mysqli_error($link)) {
 ?>
